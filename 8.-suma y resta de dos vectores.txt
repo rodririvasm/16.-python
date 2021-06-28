@@ -1,0 +1,37 @@
+lista1=[]
+lista2=[]
+
+valores=int(input("cuantos valores quieres introducir:"))
+valores2=int(input("cuantos valores quieres introducir:"))
+
+for i in range(0,valores):
+    numeros=int(input("introduce los numeros del primer vector:"+str(i)+":"))
+    lista1.append(numeros)
+print()
+for i in range(0,valores2):
+    numeros2=int(input("introduce los numeros del segundo vector:"+str(i)+":"))
+    lista2.append(numeros2)
+
+print("numero ingresados:")
+print(str(lista1),end=" ")
+print()
+print("numero ingresados:")
+print(str(lista2),end=" ")
+print()
+
+def sumayresta (array):
+    if array==[]:
+        suma=0
+    else:
+        suma=array[0]+sumayresta(array[1:])
+    
+    return suma
+
+sumayresta(lista1)
+sumayresta(lista2)
+sumaTotal=sumayresta(lista1)+sumayresta(lista2)
+resta=sumayresta(lista1)-sumayresta(lista2)
+print(sumayresta(lista1))
+print(sumayresta(lista2))
+print("suma total es:"+str(sumaTotal))
+print("resta total es:"+str(resta))

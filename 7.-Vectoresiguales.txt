@@ -1,0 +1,34 @@
+lista1=[]
+lista2=[]
+
+valores=int(input("cuantos valores quieres introducir:"))
+valores2=int(input("cuantos valores quieres introducir:"))
+
+for i in range(0,valores):
+    numeros=int(input("introduce los numeros:"+str(i)+":"))
+    lista1.append(numeros)
+print()
+for i in range(0,valores2):
+    numeros2=int(input("introduce los numeros:"+str(i)+":"))
+    lista2.append(numeros2)
+
+print("numero ingresados:")
+print(str(lista1),end=" ")
+print()
+print("numero ingresados:")
+print(str(lista2),end=" ")
+print()
+
+def comparaciondevectores(a,b):
+    if a==b:
+        print("vectores iguales!!")
+        print(lista1)
+        print(lista2)
+        
+    else:
+        print("vectores diferentes!!")
+        print(lista1)
+        print(lista2)
+    return
+
+comparaciondevectores(lista1,lista2)

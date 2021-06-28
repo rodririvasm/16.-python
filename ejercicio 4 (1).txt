@@ -1,0 +1,11 @@
+contraseñaelegida=int(input("creé una contraseña:"))
+
+for i in range(0,3,1):    ###comentario //esto se pondria en otros programas for(i=0;i<=3;i++)//
+
+    contraseña=int(input("cual es tu contraseña:"))
+
+    if contraseñaelegida==contraseña:                      ###comparacion
+        print("contraseña valida")
+    
+    else:
+        print("contraseña invalida,intentelo de nuevo")

@@ -1,0 +1,20 @@
+lista=[]
+valores=int(input("ingrese la cantidad de numeros:"))
+
+for i in range(0,valores):
+    numeros=int(input("ingrese el valor"+str(i)+":"))
+    lista.append(numeros)
+print("datos ingresados:")
+print(str(lista),end=" ")
+print()
+
+numeroaencontrar=int(input("ingrese el numero a encontrar:"))
+
+def encontrarnumero(array):
+    for x in range(0,valores,1):
+        if numeroaencontrar==array[x]:
+            encontrado=numeroaencontrar
+    return encontrado
+
+
+print("numero encontrado:"+str(encontrarnumero(lista)))

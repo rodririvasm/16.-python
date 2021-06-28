@@ -1,0 +1,14 @@
+vector=[]
+numero=int(input("ingrese la cantidad de valores:"))
+
+for i in range(0,numero):
+    valores=int(input("valor numero"+str(i)+" "))
+    vector.append(valores)
+
+print("datos introducidos:")
+print(vector)
+
+vector.sort()
+
+print("ascendente")
+print(vector)

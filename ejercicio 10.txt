@@ -1,0 +1,6 @@
+NumeroFactorial=int(input("digite el numero a convertir en factorial:"))
+factorial=1
+
+for i in range(1,NumeroFactorial+1,1):      ### comentario --> for(i=1;i<=numerofactorial;i++) ó for(i=1;i<=(numerofactorial+1);i++) ####
+     factorial=factorial*i
+     print("el numero es:"+ str(factorial))

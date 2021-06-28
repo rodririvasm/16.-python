@@ -1,0 +1,21 @@
+calificaciones=[]
+valores=int(input("introduce la cantidad de valores:"))
+
+for x in range(0,valores):
+    numeros=int(input("ingrese el numero"+str(x)+":"))
+    calificaciones.append(numeros)  ### vamos agregando los valores al vector "scores"
+print("datos de entrada son:",str(calificaciones),end=" ")
+print()
+
+def promedio(array):
+    suma=0
+    for j in array:
+        suma=suma+j
+    return suma
+
+resultado=promedio(calificaciones)
+totalpromedio=resultado/valores
+print("suma es:",str(resultado),end=" ")
+print()
+print("promedio es:",str(totalpromedio),end=" ")
+

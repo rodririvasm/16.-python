@@ -1,0 +1,15 @@
+mayorymenor=[]
+numero=int(input("introduce la cantidad de numeros del arreglo:"))
+mayor=0
+menor=0
+for i in range(0,numero):
+    valor=float(input("introduce numero"+str(i)+":"))
+    mayorymenor.append(valor)
+
+print(str(mayorymenor))
+print()
+
+mayor=max(mayorymenor)
+menor=min(mayorymenor)
+print("el mayor:"+str(mayor))
+print("el menor:"+str(menor))

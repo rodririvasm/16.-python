@@ -1,0 +1,18 @@
+numeros=[]
+x=int(input("ingrese la cantidad de digitos:"))
+for i in range(x):
+    numero =int(input("ingrese numeros primos:"))
+    numeros.append(numero)
+numerodedigitos=int(input("que cantidad de numeros primos deseas ver:"))
+
+def funcionPar_Impar(lista):
+    divisibles=1
+    print("estos son los: "+str(numerodedigitos)+" numeros primos que deseas ver")
+    for i in lista:
+        if i%2==0:
+            if divisibles<=numerodedigitos:
+                divisibles +=1
+                print((i),end=" ")
+    return
+
+funcionPar_Impar(numeros)

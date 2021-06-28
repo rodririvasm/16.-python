@@ -1,0 +1,29 @@
+scores=[]
+valores=int(input("introduce la cantidad de valores:"))
+
+for x in range(0,valores):
+    numeros=int(input("ingrese el numero"+str(x)+":"))
+    scores.append(numeros)  ###comentario -->### vamos agregando los valores al vector "scores" con la funcion "append"
+print("datos de entrada son:",str(scores),end=" ")
+print()
+
+###comentarios
+###funcion a la que llamamos metodoburbuja
+
+def metodoburbuja (array):
+    length=len(array)-1
+    for j in range(0,length):
+        if array[j]>array[j+1]:
+            aux=array[j]
+            array[j]=array[j+1]
+            array[j+1]=aux
+    return array
+
+###comentarios
+### llamamos a la funcion metodoburbuja
+
+resultado=metodoburbuja(scores)
+
+### imprimimos el valor de funcion con la variable "resultado"
+
+print("dato ascendente:",str(resultado),end=" ")
